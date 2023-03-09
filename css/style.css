@@ -7,14 +7,14 @@
   --light-grey: #e0dede;
   --medium-grey: #2f3034;
 
-  --menu-height: 75px;
+  --menu-height: 200px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -30,24 +30,76 @@ select,
 textarea {
   font-family: "Poppins", sans-serif;
   color: white;
+  cursor: pointer;
 }
 
 h1 {
-  font-size: 44px;  
+  font-size: 44px;
   text-align: center;
-  }
+}
 
 h1,
 h2 {
   margin: 0;
   font-weight: 400;
+  color: black;
 }
 
-.title-green {
+nav{
+  background-image: url("/assets/image/manutencao-carro.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin: auto;
+  margin-top: 5px;
+  border: 2px solid black;
+}
+
+nav {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: var(--menu-height);
+  /* background: var(--bg-dark); */
+  /* padding: 0 100px; */
+  /* position: sticky;
+  top: 0;*/
+} 
+
+nav ul {
+  /* width: 80%; */
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul a {
+  font-size: 24px;
+  text-decoration: none;
   color: var(--green);
-  
 }
 
-.carousel-marcas .title-green{
-  
+nav ul a svg {
+  display: none;
 }
+
+section .carousel-marcas {
+  padding: 0 50px;
+  max-width: 1000px;
+  /* height: 75px; */
+  position: relative;
+}
+
+/* #botao_anterior,
+#botao_proximo {
+  position: absolute;
+  top: 80px;
+  color: #212226;
+}
+
+#botao_anterior {
+  left: 30px;
+}
+#botao_proximo {
+  right: 30px;
+} */

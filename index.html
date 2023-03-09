@@ -14,11 +14,24 @@
       rel="stylesheet"
       href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
     />
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Marcelo´s Car</title>
   </head>
   <body>
-    <section class="carousel-marcas" style="background-color: aqua;">
-      <h1 class="title-green">Marcas Atendidas</h1>
+
+    <nav>
+      <!-- <img src="assets/image/logo.png" alt="logo" /> -->
+      <ul>
+        <a href="#owl-demo"><i data-feather="user"></i>Sobre mim</a>
+        <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+        <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+        <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+        <a href="#contact"><i data-feather="send"></i>Contato</a>
+      </ul>
+    </nav>
+
+    <section class="carousel-marcas">
+      <h1>Seu Carro em Boas Mãos</h1>
       <div id="owl-demo" class="owl-carousel owl-theme">
         <div class="item">
           <img src="assets/marcas/chery.png" alt="chery" />
@@ -58,16 +71,7 @@
         </div>
         <div class="item">
           <img src="assets/marcas/nissan.png" alt="natal" />
-        </div>
-        <div class="item">
-          <img src="assets/marcas/nissan.png" alt="nissan" />
-        </div>
-        <div class="item">
-          <img src="assets/marcas/peugeot.png" alt="peugeot" />
-        </div>
-        <div class="item">
-          <img src="assets/marcas/nissan.png" alt="nissan" />
-        </div>
+        </div>        
         <div class="item">
           <img src="assets/marcas/peugeot.png" alt="peugeot" />
         </div>
@@ -87,11 +91,14 @@
           <img src="assets/marcas/vw.png" alt="vw" />
         </div>
       </div>
+
+       <div class="navegacao">
+         <i data-feather="chevron-left" id="botao_anterior"></i>
+         <i data-feather="chevron-right" id="botao_proximo"></i>
+      </div> 
     </section>
-    <div class="navegacao">
-      <button id="botao_anterior"></button>
-      <button id="botao_proximo"></button>
-    </div>
+
+   <div class="image"></div>
 
     <script>
       feather.replace();

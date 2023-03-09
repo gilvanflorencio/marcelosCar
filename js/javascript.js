@@ -1,11 +1,11 @@
 $(document).ready(function () {
+  var owl = $("#owl-demo")
 
-  $("#owl-demo").owlCarousel({
-   
+  owl.owlCarousel({
     loop: true,
-    margin: 10,
-    nav: true,
-    navText: ["<", ">"],
+    margin: 5,
+    //nav: true,
+    // navText: ["<", ">"],
     autoplay: true,
     autoPlayTimeout: 2000,
     dots: false,
@@ -13,17 +13,33 @@ $(document).ready(function () {
       0: {
         items: 2
       },
-      360: {
+      480: {
         items: 3
       },
       767: {
-        items: 4
+        items: 3
       },
       1000: {
-        items: 5
+        items: 4
       }
     }
+  });
+
     // itemsDesktop : [1199,3],
     // itemsDesktopSmall : [979,3]
+    $("#botao_anterior").on('click', function(){
+      owl.trigger("prev.owl.carousel");
+    });
+
+    $("#botao_proximo").on('click', function(){
+      owl.trigger("next.owl.carousel");
+    });
   });
-});
+
+ 
+
+
+
+
+
+
