@@ -96,7 +96,7 @@ h2 {
   border-radius: 10%;
 }
 
-.services .services-container .services-card img{
+.services .services-container .services-card img {
   border-radius: 10% 10% 0 0;
 }
 
@@ -114,45 +114,70 @@ h2 {
   .services .services-container .services-card img {
   }
 
-
-  @media(min-width: 767px) and (max-width: 999px){
-
-    h1{
+  @media (max-width: 767px)  {
+    h1 {
       font-size: 26px;
     }
-    .oficina{
-      display: block;
-      height: 284px;
+    .oficina {
+      background-size: cover;
+      width: 100%;
     }
 
-    .navegacao{
+    .navegacao {
       display: none;
     }
-   
 
-    .services{
+    .services {
       margin: 30px auto;
     }
     .services .services-container {
       flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
 
     .services .services-container .services-card {
-     height: 300px;
-     margin-top: 20px;     
+      height: 300px;
+      margin-top: 20px;
     }
   }
 
-  @media (max-width: 480px) {
-
-    h1{
+  /* @media (max-width:481px)  and (max-width:766) {
+    h1 {
       font-size: 16pt;
     }
-    .oficina{
-      height: 146px;
+    .oficina {
+      height: 300px;
+    }
+
+    .services .services-container {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .services .services-container .services-card {
+      margin-top: 10px;
+    }
+  } */
+
+  @media (min-width: 480px){
+    h1 {
+      font-size: 16pt;
+    }
+    .oficina {
+      background-size: cover;
+      width: 100%;
+    }
+
+    .services .services-container {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .services .services-container .services-card {
+      margin-top: 10px;
     }
   }
-
 }
