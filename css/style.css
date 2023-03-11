@@ -161,6 +161,21 @@ nav ul a svg {
     display: none;
   }
 
+  .endereço{
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .endereço .container-img{
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .endereço .geolocalizacao{
+    margin-top: 10px;
+    width: 95%;
+   height: 400px;
+  }
 }
 
 /*///////////////////////MEDIA QUERIES CELULAR //////////////////////////*/
