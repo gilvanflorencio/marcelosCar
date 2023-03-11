@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/owl-carousel.css" />
     <link
@@ -18,12 +24,20 @@
     <title>Marcelo´s Car</title>
   </head>
   <body>
+    <header>
+      <div class="oficina"></div>
+    </header>
 
-    <div class="oficina">    </div>
-
-    <div><h1>Seu Carro em Boas Mãos</h1></div>
+    <nav>
+      <ul>
+        <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+        <a href="#geocalizacao"><i data-feather="map-pin"></i>Localização</a>
+        <a href="#contact"><i data-feather="send"></i>Contato</a>
+      </ul>
+    </nav>
 
     <section class="carousel-marcas">
+      <h1>Seu Carro em Boas Mãos</h1>
       <div id="owl-demo" class="owl-carousel owl-theme">
         <div class="item">
           <img src="assets/marcas/chery.png" alt="chery" />
@@ -87,41 +101,58 @@
         <i data-feather="chevron-left" id="botao_anterior"></i>
         <i data-feather="chevron-right" id="botao_proximo"></i>
       </div>
-    </section>
+    </section>   
 
-    <section class="services">
-      <h1>Serviços em Geral</h1>
-      <div class="services-container">
-        <div class="services-card">
-          <div class="img-container">
-            <img
-              src="/assets/image/aparelho.png"
-              alt="manutenção com aparelho"   
-            />
-          </div>
-          <p><b>Detecção de Problemas</b></p>
-        </div>
-
-        <div class="services-card">
-          <div class="img-container">
-            <img src="/assets/image/freio.png" alt="manutenção freio" />
-          </div>
-          <p><b>Troca de Freios</b></p>
-        </div>
-
-        <div class="services-card">
-          <div class="img-container">
-            <img src="/assets/image/motor.png" alt="manutenção do motor" />
-          </div>
-          <p><b>Manutenção de Motores</b></p>
+    <div class="card-group">
+      <div class="card">
+        <img
+          src="/assets/image/aparelho.png"
+          class="card-img-top"
+          alt="aparelho"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Scanner Automotivo</h5>
+          <p class="card-text">
+            O scanner automotivo é um aparelho utilizado para detectar problemas
+            no sistema de injeção eletrônica dos carros, bem como informações
+            sobre o seu reparo. Isso porque ele é capaz de identificar os
+            parâmetros operacionais do veículo e corrigir eventuais falhas em
+            tempo real.
+          </p>
         </div>
       </div>
-    </section>
+      <div class="card">
+        <img src="/assets/image/freio.png" class="card-img-top" alt="Freios" />
+        <div class="card-body">
+          <h5 class="card-title">Troca de Freios</h5>
+          <p class="card-text">
+            A recomendação geral é que a manutenção dos freios deve ser feita a
+            cada 10 mil quilômetros rodados.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/image/motor.png" class="card-img-top" alt="Motor" />
+        <div class="card-body">
+          <h5 class="card-title">Reparos em Motores</h5>
+          <p class="card-text">
+            A manutenção periódica do motor precisa ser feita, no mínimo, uma
+            vez ao ano ou a cada 10 mil quilômetros rodados. Esta periodicidade
+            ajuda a manter o motor regulado. Em geral, observa-se o nível de
+            óleo e realiza-se a troca dos filtros.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script>
       feather.replace();
     </script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
     <script src="jquery/dist/jquery.min.js"></script>
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>

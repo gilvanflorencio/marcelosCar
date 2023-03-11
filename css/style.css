@@ -10,7 +10,6 @@
   --menu-height: 300px;
 }
 
-/*///////////////////////MEDIA QUERIES TELAS FULL//////////////////////////*/
 * {
   box-sizing: border-box;
 }
@@ -24,6 +23,7 @@ body {
   margin: 0px;
   background: var(--purple);
   padding: 0;
+  position: relative;
 }
 
 body,
@@ -35,17 +35,53 @@ textarea {
   color: white;
   cursor: pointer;
 }
-
+p{
+  color: var(--medium-grey);
+}
 h1 {
   font-size: 44px;
   text-align: center;
 }
-
+.card-title{
+  color: var(--bg-dark)
+}
 h1,
 h2 {
-  margin: 0;
   font-weight: 400;
   color: black;
+}
+
+header {
+  height: calc(100vh - 60vh);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--bg-dark);
+  height: 65px;
+  padding: 0;
+  z-index: 99;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  padding: 0;
+}
+
+nav ul a {
+  font-size: 24pt;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav ul a svg {
+  display: none;
 }
 
 .oficina {
@@ -55,11 +91,12 @@ h2 {
   background-position: center;
   width: 100%;
   height: 40vh;
-  box-shadow: 0px 5px 40px 1px black;
+  /* box-shadow: 0px 5px 40px 1px black; */
 }
 
 .carousel-marcas {
-  width: 98%;
+  margin: 10px 0;
+  /* width: 98%; */
   /* padding: 0 50px; */
   /* max-width: 1000px; */
   /* height: 75px; */
@@ -80,39 +117,20 @@ h2 {
   right: 30px;
 }
 
-.services {
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.services .services-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 60px 0 auto;
-}
-
-.services .services-container .services-card {
-  max-width: 350px;
-  background: #212226;
-  border-radius: 10%;
-}
-
-.services .services-container .services-card img {
-  border-radius: 10% 10% 0 0;
-}
-
 /*/////////////////////// MEDIA QUERIES LAPTOP////////////////// */
 @media (max-width: 1000) {
-   
-  .service-card {
-    height: 394px;
+  nav ul a {
+    font-size: 24pt;
   }
+
+  nav ul a svg {
+    display: none;
+  }
+  
 }
 
 /*///////////////////////MEDIA QUERIES TABLETS //////////////////////////*/
-@media (max-width: 767px) {
+@media (max-width: 767px){
   h1 {
     font-size: 26px;
   }
@@ -121,34 +139,32 @@ h2 {
     display: none;
   }
 
-  .services {
-      margin: 30px auto;
-    }
-    .services .services-container {
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-    }
-
-  .services .services-container .services-card {
-    height: 300px;
-    margin-top: 20px;
-  }
 }
 
 /*///////////////////////MEDIA QUERIES CELULAR //////////////////////////*/
-@media (min-width: 480px) {
+@media (max-width: 480px) {
+  body {
+    margin-bottom: calc(var(--menu-height) + 50px);
+  }
+  
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    top: unset;
+    padding: 0 15px;
+  }
+
+  nav ul a {
+    font-size: 12px;
+  }
+
+  nav ul a svg {
+    display: block;
+    margin: 0 auto 10px;
+  }
   h1 {
     font-size: 16pt;
   }
-
-  /* .services .services-container {
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-    } */
-
-  .services .services-container .services-card {
-    margin-top: 10px;
-  }
+  
 }
