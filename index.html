@@ -25,12 +25,18 @@
   </head>
   <body>
     <header>
-      <img src="/assets/image/oficina.png" class="img-fluid" alt="logo" />
+      <img
+        id="topo"
+        src="/assets/image/oficina.png"
+        class="img-fluid"
+        alt="logo"
+      />
       <!-- <div class="oficina"></div> -->
     </header>
 
     <nav>
       <ul>
+        <a href="#topo"><i data-feather="grid"></i>Menu</a>
         <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
         <a href="#endereço"><i data-feather="map-pin"></i>Localização</a>
         <a href="#contact"><i data-feather="send"></i>Contato</a>
@@ -104,7 +110,7 @@
       </div>
     </section>
 
-    <div id="services" class="row row-cols-1 row-cols-md-3 g-4 m-2">
+    <div id="services" class="row row-cols-1 row-cols-md-3 g-4 m-1">
       <div class="col">
         <div class="card h-100">
           <img
@@ -150,11 +156,57 @@
           </div>
         </div>
       </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="/assets/image/trocaoleo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="/assets/image/embreagem.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/image/injecao.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="endereço" class="endereço">    
-
-      <div class="geolocalizacao">
+    <section id="endereço" class="endereço">
+      <div class="geocalizacao">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8331375511334!2d-46.5792738855427!3d-23.574435667959197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c19ba01599f%3A0x46864dacafa77249!2sR.%20Min.%20Salgado%20Filho%2C%20204%20-%20Vila%20Libanesa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003193-020!5e0!3m2!1spt-BR!2sbr!4v1678539119947!5m2!1spt-BR!2sbr"
           width="100%"
@@ -165,11 +217,30 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+    </section>
 
-      <div class="container-img">
-        <img src="/assets/image/endereço.png" alt="endereço" />
+    <section class="contact">
+      <div class="container-contact">
+        <div class="whatsaap">
+          <a href="https://api.whatsapp.com/send/?phone=5511914776445"
+            ><img src="/assets/image/what98.png" alt=""
+          /></a>
+          <p>Click aqui</p>
+        </div>
+        <div class="adress">
+          <i data-feather="map"></i>
+          <p>Rua: Min. Salgado filho nº204</p>
+               </div>
+        <div class="telefone">
+          <i data-feather="phone"></i>
+          <p>2965-1482</p>
+        </div>
       </div>
-    </div>
+    </section>
+      
+    <footer>
+      <p>2023. Marcelo´s Car. Todos os direitos reservados.</p>
+    </footer>
 
     <script>
       feather.replace();

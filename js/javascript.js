@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   owl.owlCarousel({
     loop: true,
-    margin: 5,
+    margin: 0,
     //nav: true,
     // navText: ["<", ">"],
     autoplay: true,
@@ -14,7 +14,7 @@ $(document).ready(function () {
         items: 4
       },
       480: {
-        items: 3
+        items: 4
       },
       767: {
         items: 4
