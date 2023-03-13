@@ -113,8 +113,7 @@ nav ul a svg {
   padding: 0 20px;
 }
 
-.endereço .geocalizacao {
-  border: 1px solid blanchedalmond;
+.endereço .geocalizacao iframe{
   border-radius: 5px;
 }
 
@@ -141,9 +140,10 @@ nav ul a svg {
 
 }
 
-.contact .container-contact .whatsaap img {
+.contact .container-contact .whatsaap svg {
   width: 65px;
   height: 65px;
+  color: green;
 }
 
 .contact .container-contact .whatsaap,
@@ -153,7 +153,6 @@ nav ul a svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
 }
 
 footer {
@@ -190,11 +189,7 @@ footer {
 
 /*///////////////////////MEDIA QUERIES CELULAR //////////////////////////*/
 @media (max-width: 480px) {
-  body {
-    /* margin-bottom: calc(var(--menu-height) + 50px); */
-  }
-
-  nav {
+   nav {
     position: fixed;
     bottom: 0;
     width: 100%;
