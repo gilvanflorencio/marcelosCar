@@ -129,20 +129,20 @@ nav ul a svg {
 }
 
 .contact .container-contact .adress svg {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   color: green;
 }
 .contact .container-contact .telefone svg {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   color: green;
 
 }
 
 .contact .container-contact .whatsaap svg {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   color: green;
 }
 
@@ -212,4 +212,17 @@ footer {
   footer {
     margin-bottom: calc(var(--menu-height) + 0px);
   }
+ 
+  .contact .container-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .contact .container-contact .telefone{
+   display: grid;
+   justify-items: center;
+   margin-left: calc(100% + 30px);
+  }
+
 }
