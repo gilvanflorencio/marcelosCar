@@ -33,7 +33,6 @@ select,
 textarea {
   font-family: "Poppins", sans-serif;
   color: white;
-  cursor: pointer;
 }
 p {
   color: var(--medium-grey);
@@ -52,18 +51,57 @@ h2 {
 }
 
 header {
-  height: calc(100vh - 60vh);
+  display: flex;
+  /* height: calc(100vh - 60vh); */
+  margin-top: 10px;
+}
+
+header div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  width: fit-content;
+  font-weight: bold;
+}
+
+header div img {
+  border: 1px solid black;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.loja1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.loja2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  padding-right: 20px;
+  padding-left: 10px;
 }
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background: var(--bg-dark);
-  height: 65px;
-  padding: 0;
-  z-index: 99;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-dark);
+    height: 65px;
+    margin: auto;
+    padding: 0 20px;
+    z-index: 99;
+    width: 96%;
 }
 
 nav ul {
@@ -84,10 +122,9 @@ nav ul a svg {
   display: none;
 }
 
-nav ul a:hover{
+nav ul a:hover {
   color: white;
 }
-
 
 .img-fluid {
   width: 100%;
@@ -102,7 +139,7 @@ nav ul a:hover{
 #botao_anterior,
 #botao_proximo {
   position: absolute;
-  top: calc(50% - 12px);
+  /* top: calc(50% - 12px); */
   color: #212226;
 }
 
@@ -118,7 +155,7 @@ nav ul a:hover{
   padding: 0 20px;
 }
 
-.endereço .geocalizacao iframe{
+.endereço .geocalizacao iframe {
   border-radius: 5px;
 }
 
@@ -130,7 +167,7 @@ nav ul a:hover{
 }
 .contact .container-contact {
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 }
 
 .contact .container-contact .adress svg {
@@ -142,7 +179,6 @@ nav ul a:hover{
   width: 45px;
   height: 45px;
   color: green;
-
 }
 
 .contact .container-contact .whatsaap svg {
@@ -159,6 +195,9 @@ nav ul a:hover{
   align-items: center;
   justify-content: center;
   padding: 5px;
+}
+.contact .container-contact .whatsaap p{
+  margin: 0;
 }
 
 footer {
@@ -191,11 +230,27 @@ footer {
   .navegacao {
     display: none;
   }
+
+  header div p span {
+    text-align: center;
+  }
 }
 
 /*///////////////////////MEDIA QUERIES CELULAR //////////////////////////*/
 @media (max-width: 480px) {
-   nav {
+  header {
+    display: inline-block;
+    height: 100vh;
+  }
+
+  .loja1,
+  .loja2 {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  nav {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -218,17 +273,19 @@ footer {
   footer {
     margin-bottom: calc(var(--menu-height) + 0px);
   }
- 
-  .contact .container-contact{
+
+  .contact .container-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
-  .contact .container-contact .telefone{
-   display: grid;
-   justify-items: center;
-   margin-left: calc(100% + 30px);
+  .contact .container-contact .telefone {
+    display: grid;
+    justify-items: center;
+    margin-left: calc(100% + 1px);
   }
-
+  .contact .container-contact .whatsaap p{
+    margin: 0;
+  }
 }
