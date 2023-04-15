@@ -67,7 +67,7 @@ header div img {
   border: 1px solid black;
 }
 
-.card-text:last-child {
+.loja1, .loja2 p {
   margin-bottom: 0;
   margin: auto;
   text-align: center;
