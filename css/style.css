@@ -99,9 +99,8 @@ nav {
     background-color: var(--bg-dark);
     height: 65px;
     margin: auto;
-    padding: 0 20px;
     z-index: 99;
-    width: 96%;
+    width: calc(100% - 40px);
 }
 
 nav ul {
